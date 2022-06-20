@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<script defer src="./script.js"></script>
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="top">
+				<div class="preview">
+					<div class="box"></div>
+				</div>
+				<div class="controls">
+					<h2>box-shadow</h2>
+					<div class="control-panel">
+						<div class="input-item">
+							<div class="top-bar">
+								<label for="horizontal">Horizontal</label>
+								<input type="number" name="horizontal" class="horizontal number" min="-100" max="100" value="8" />
+							</div>
+							<div class="bottom-bar">
+								<input type="range" name="horizontal" class="horizontal range" min="-100" max="100" value="8" />
+							</div>
+						</div>
+						<div class="input-item">
+							<div class="top-bar">
+								<label for="vertical">Vertical</label>
+								<input type="number" name="vertical" class="vertical number" min="-100" max="100" value="8" />
+							</div>
+							<div class="bottom-bar">
+								<input type="range" name="vertical" class="vertical range" min="-100" max="100" value="8" />
+							</div>
+						</div>
+						<div class="input-item">
+							<div class="top-bar">
+								<label for="blur">Blur</label>
+								<input type="number" name="blur" class="blur number" min="0" max="100" value="24" />
+							</div>
+							<div class="bottom-bar">
+								<input type="range" name="blur" class="blur range" min="0" max="100" value="24" />
+							</div>
+						</div>
+						<div class="input-item">
+							<div class="top-bar">
+								<label for="spread">Spread</label>
+								<input type="number" name="spread" class="spread number" min="-100" max="100" value="9" />
+							</div>
+							<div class="bottom-bar">
+								<input type="range" name="spread" class="spread range" min="-100" max="100" value="9" />
+							</div>
+						</div>
+						<div class="input-item">
+							<div class="top-bar">
+								<label for="color">Color</label>
+								<input type="color" name="color" class="color" />
+							</div>
+						</div>
+						<div class="input-item">
+							<div class="top-bar">
+								<label for="inset">Inset</label>
+								<!-- <input type="checkbox" name="inset" class="inset" /> -->
+								<label class="switch">
+									<input type="checkbox" class="inset" />
+									<span class="slider round"></span>
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bottom">
+				<div class="code-box">
+					<button>Copy</button>
+					<pre>
+-webkit-box-shadow: 14px 8px 24px 9px rgba(66, 68, 90, 1);
+                         -moz-box-shadow: 14px 8px 24px 9px rgba(66, 68, 90, 1);
+                          box-shadow: 14px 8px 24px 9px rgba(66, 68, 90, 1);
+                    </pre
+					>
+				</div>
+			</div>
+		</div>
+		<div class="snackbar">Copied to Clipboard!</div>
+	</body>
+</html>
