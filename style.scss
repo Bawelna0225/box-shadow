@@ -22,7 +22,6 @@ body {
 	.top {
 		height: 40%;
 		width: 100%;
-		// outline: 1px solid red;
 		display: flex;
 		gap: 20px;
 		.preview {
@@ -34,9 +33,6 @@ body {
 			border-radius: 12px;
 			background-color: rgb(255, 255, 255);
 			overflow: hidden;
-			// padding: 50px;
-
-			// outline: 1px solid green;
 			.box {
 				width: 350px;
 				height: 350px;
@@ -53,14 +49,14 @@ body {
 			justify-content: center;
 			align-items: center;
 			height: 500px;
-            h2{
-                width: 100%;
+			h2 {
+				width: 100%;
 				height: 10%;
-                padding-top: 10px;
-                padding-left: 20px;
-                font-weight: 100;
-                text-align: left;
-            }
+				padding-top: 10px;
+				padding-left: 20px;
+				font-weight: 100;
+				text-align: left;
+			}
 			.control-panel {
 				width: 100%;
 				height: 80%;
@@ -78,7 +74,7 @@ body {
 						width: 100%;
 						display: flex;
 						justify-content: space-between;
-                        align-items: center;
+						align-items: center;
 					}
 					.range {
 						width: 100%;
@@ -107,9 +103,9 @@ body {
 			border-radius: 12px;
 			position: relative;
 			width: max(80%, 300px);
-            pre{
-                overflow-x: auto;         
-            }
+			pre {
+				overflow-x: auto;
+			}
 			button {
 				position: absolute;
 				right: -5px;
@@ -119,7 +115,7 @@ body {
 				pointer-events: none;
 				background-color: #d57c08;
 				border: none;
-                color: white;
+				color: white;
 			}
 			&:hover {
 				button {
@@ -227,6 +223,13 @@ input[type='range'] {
 			transition: 0.4s;
 			filter: drop-shadow(0 0 0.1rem var(--dot-color));
 		}
+		&.round {
+			border-radius: 34px;
+			&:before {
+				border-radius: 50%;
+				background-color: #555;
+			}
+		}
 	}
 }
 
@@ -234,36 +237,26 @@ input:checked + .slider:before {
 	-webkit-transform: translateX(22px);
 	-ms-transform: translateX(22px);
 	transform: translateX(22px);
-	// background-color: #ddd;
 }
 
-/* Rounded sliders */
-.slider.round {
-	border-radius: 34px;
-}
-
-.slider.round:before {
-	border-radius: 50%;
-	background-color: #555;
-}
-@media (max-width: 1020px){
-    .top{
-        flex-direction: column;
-        height: 100% !important;
-        .preview{
-            width: 100% !important;
+@media (max-width: 1020px) {
+	.top {
+		flex-direction: column;
+		height: 100% !important;
+		.preview {
+			width: 100% !important;
 			height: 300px !important;
-            .box{
-                width: 200px !important;
-                height: 200px !important;
-            }
-        }
-        .controls{
-            width: 100% !important;
-        }
-    }
-    .code-box{
-        padding: 10px 5px !important;
-        width: 95% !important;
-    }
+			.box {
+				width: 200px !important;
+				height: 200px !important;
+			}
+		}
+		.controls {
+			width: 100% !important;
+		}
+	}
+	.code-box {
+		padding: 10px 5px !important;
+		width: 95% !important;
+	}
 }
