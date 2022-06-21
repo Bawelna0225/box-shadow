@@ -10,10 +10,10 @@ body {
 	background-color: rgb(237, 237, 237);
 }
 .container {
-	// outline: 1px solid red;
-	margin: 0 auto;
+	margin: 20px auto;
 	width: min(100% - 1rem, 1200px);
-	height: 100vh;
+	min-height: 100vh;
+	overflow: auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -27,13 +27,14 @@ body {
 		gap: 20px;
 		.preview {
 			width: 70%;
-			height: 100%;
+			height: 500px;
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			border-radius: 12px;
 			background-color: rgb(255, 255, 255);
 			overflow: hidden;
+			// padding: 50px;
 
 			// outline: 1px solid green;
 			.box {
@@ -45,15 +46,16 @@ body {
 		}
 		.controls {
 			width: 30%;
-			height: 100%;
 			border-radius: 12px;
 			background-color: rgb(255, 255, 255);
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
+			height: 500px;
             h2{
                 width: 100%;
+				height: 10%;
                 padding-top: 10px;
                 padding-left: 20px;
                 font-weight: 100;
@@ -61,7 +63,7 @@ body {
             }
 			.control-panel {
 				width: 100%;
-				height: 100%;
+				height: 80%;
 				display: flex;
 				flex-direction: column;
 				justify-content: space-evenly;
@@ -91,7 +93,7 @@ body {
 		}
 	}
 	.bottom {
-		height: 20%;
+		height: 250px;
 		width: 100%;
 		border-radius: 12px;
 		background-color: rgb(255, 255, 255);
@@ -250,6 +252,7 @@ input:checked + .slider:before {
         height: 100% !important;
         .preview{
             width: 100% !important;
+			height: 300px !important;
             .box{
                 width: 200px !important;
                 height: 200px !important;
